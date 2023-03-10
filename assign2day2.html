@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day - 2 Assignment - 2</title>
+    <style>
+        #div1 {
+            background-color: skyblue;
+            height: 100px;
+            width: 100px;
+            /* leaf shape */
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            position: relative;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-name: animate-div1;
+            transition-timing-function: ease-in-out;
+        }
+
+        @keyframes animate-div1 {
+            from {
+                background-color: rgb(80, 141, 165);
+                transform: scale(.5);
+            }
+            to {
+                background-color: rgb(18, 93, 123);
+                transform: scale(1) translateX(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+    </div>
+</body>
+</html>

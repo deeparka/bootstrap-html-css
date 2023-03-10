@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        a {
+            color: blue;
+        }
+
+        a:hover {
+            background-color: blanchedalmond;
+        }
+
+        a:visited {
+            color: aqua;
+        }
+
+        #p1 {
+            display: none;
+        }
+
+        #div1:hover #p1{
+            display: block;
+            cursor: pointer;
+        }
+
+        p:first-child {
+            background-color: #47c6c6;
+        }
+
+        p i:first-child {
+            color: chartreuse;
+        }
+
+        /* child selector */
+        div > p {
+            font-weight: 800;
+        }
+
+        /* adjacent sibling selector */
+        div + p {
+            text-decoration: underline;
+        }
+
+        /* general sibling selector */
+        div ~ p {
+            font-size: x-small;
+        }
+
+
+        .p1::first-letter {
+            font-weight: bolder;
+        }
+
+        .p1::first-line {
+            color: limegreen;
+        }
+        
+        h1::before {
+            content: url(./images/user.jpg);
+        }
+
+        h1::after {
+            content: url(./images/user.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Page</h1>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi velit minima vel tenetur modi placeat dolorum corporis tempora quos voluptatibus?</p>
+    </div>
+    <div id="div1">
+        This is div1
+        <p id="p1">This is a paragraph</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, facilis.</p>
+    <p>Lorem ipsum dolor <i>sit amet consectetur</i> adipisicing elit. Ducimus sequi ullam neque non odit esse possimus alias voluptates, placeat nisi.</p>
+    <a href="#">This is a link</a>
+    <p class="p1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem aliquid, ratione, est provident officiis voluptatem impedit labore quisquam culpa voluptatibus quae assumenda nemo soluta ab? Nostrum non cupiditate quia impedit hic amet ullam culpa autem ipsam animi, soluta iusto ipsum debitis aspernatur sint distinctio! Quis enim quo facilis tenetur dignissimos possimus nam pariatur laboriosam, aut quae iure inventore iste corporis velit voluptatum, explicabo sunt reiciendis, minima a nesciunt suscipit minus amet? Quasi eius perferendis nisi modi natus quia magnam cum, hic est ullam odit corrupti voluptate incidunt beatae autem deserunt aliquid dolores officiis temporibus quam blanditiis mollitia laudantium voluptatum error!
+    </p>
+</body>
+</html>

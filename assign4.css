@@ -1,0 +1,24 @@
+#one {
+    border: 8px red solid;
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+}
+
+#two {
+    width: 180px;
+    height: 150px;
+    background-color: burlywood;
+    margin: 15px;
+    border-radius: 10%;
+    border: 3px solid skyblue;
+}
+
+#three {
+    width: 160px;
+    height: 150px;
+    background-color: skyblue;
+    margin: 15px;
+    border-radius: 50%;
+    border: 3px solid burlywood;
+}

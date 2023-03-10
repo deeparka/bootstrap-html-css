@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Resume</h1> <br>
+    <h2>Arkadeep Prasad</h2>
+    <h3>Kolkata</h3> <br>
+
+    <h3>Career Obejective</h3>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa omnis minus impedit qui autem eaque unde inventore. Excepturi unde reiciendis tenetur ex, nesciunt modi molestiae reprehenderit rerum necessitatibus laboriosam adipisci aut ea, dignissimos ab corrupti asperiores rem aliquid libero exercitationem.</p>
+
+    <h3>Synopsis</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quia itaque sit corrupti placeat, alias excepturi laborum aliquid hic recusandae optio, assumenda sed culpa animi iure officiis error. Similique, error.</p>
+
+    <h3>Academic Details</h3>
+    <ol>
+        <li>10th</li>
+        <li>12th</li>
+        <li>B.Tech.</li>
+    </ol>
+
+    <h3>Personal Details</h3>
+    <div>
+        <h4>Hobbies</h4>
+        <ol type="I">
+            <li>Football</li>
+            <li>Recitation</li>
+            <li>Painting</li>
+        </ol>
+    </div>
+
+    <div>
+        <h4>Languages</h4>
+        <ol type="i">
+            <li>Bengali</li>
+            <li>English</li>
+            <li>Hindi</li>
+        </ol>
+    </div>
+    
+    <div>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+    </div>
+    
+    <br>
+
+    <div>
+        <img src="./images/user.jpg" width="150" height="150" alt="user image">
+    </div>
+
+    <br>
+
+    <div>
+        <table>
+            <tr>
+                <th>College Year</th>
+                <th colspan="2">SGPA</th>
+            </tr>
+            <tr>
+                <td>1st</td>
+                <td>7.3</td>
+                <td>8.2</td>
+            </tr>
+            <tr>
+                <td>2nd</td>
+                <td>8</td>
+                <td>8.6</td>
+            </tr>
+            <tr>
+                <td>3rd</td>
+                <td>9.1</td>
+                <td>9.6</td>
+            </tr>
+            <tr>
+                <td>4th</td>
+                <td>9.0</td>
+                <td>9.0</td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <div>
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>Arkadeep Prasad</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Phone Number</th>
+                <td>+91</td>
+            </tr>
+            <tr>
+                <td>1234567890</td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <div>
+        <form action="test.html" method="post">
+            <h4>Student Registration Form</h4>
+            <div>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="contact">Contact Number:</label>
+                <input type="tel" name="contact" id="contact">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="dob">D.O.B.</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+
+            <br>
+
+            <div>
+                <p>Gender:</p>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+                <br>
+                <input type="radio" name="gender" id="others">
+                <label for="others">Others</label>
+                <br>
+            </div>
+
+            <div>
+                <p>Skills</p>
+                <input type="checkbox" name="skills" id="java">
+                <label for="java">Java</label>
+                <br>
+                <input type="checkbox" name="skills" id="html">
+                <label for="html">HTML</label>
+                <br>
+                <input type="checkbox" name="skills" id="css">
+                <label for="css">CSS</label>
+                <br>
+                <input type="checkbox" name="skills" id="javascript">
+                <label for="javascript">JavaScript</label>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="file">Upload Pic:</label>
+                <input type="file" name="file" id="file">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="address">Address: </label>
+                <textarea name="address" id="address" cols="100" rows="10"></textarea>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="city">Select City:</label>
+                <select name="city" id="city">
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Chennai">Chennai</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+
+            <div>
+                <audio controls="controls" src="./images/mixkit-arcade-retro-game-over-213.wav">Audio</audio>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
