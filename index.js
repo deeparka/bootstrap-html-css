@@ -1,49 +1,63 @@
-// function greet(name, callback)
-// {
-//   console.log(' the name of the student is : ' + name);
-//   callback(bye);
-// }
+class Person {
 
-// function bye()
-// {
-//     console.log('we are inside the bye function');
-// }
+    salary = 900;
 
-// function hello(callback){
-//     console.log(' i am inside the hello function')
-//     callback();
-// }
+    static {
+        console.log("static block");
+    }
 
-// greet('Naman', hello);
+    constructor(name,age){ // paramterized constructor
+      this.name= name;
+      this.age= age;
+    }
 
-// let cities = ["Pune", "Bangalore", "Hyderabad"];
+    greet(){
+        console.log('calling the greet function');
+        console.log('the salary is ' + this.salary) 
+    }
 
-// cities.push("Itanagar");
-// cities.push("Kochi");
+    get getDetails(){
+       return this.calculate();
+    }
 
-// console.log(cities.length);
-// console.log(cities);
+    set setAge(age)
+    {
+      this.age = age;
+    }
 
-// cities.unshift("Delhi");
-// console.log(cities);
+    calculate(){
+        console.log('the name is ' + this.name + ' and the age is '+ this.age);
+    }
+}
 
-// cities.splice(1, 0, "Chennai");
-// console.log(cities);
+class TempPerson extends Person {
 
-// cities.push("Kolkata");
-// console.log(cities);
+    dept = 'None';
+    constructor(name,age,dept){
+        super(name,age);
+        this.dept= dept;
+    }
 
-// cities.pop();
-// cities.pop();
+    get getDept(){
+        return this.dept;
+    }
 
-// console.log(cities.length);
-// console.log(cities);
+    set setDept(dept)
+    {
+    this.dept = dept;
+    }
 
-const arr1 = ["Hello", "World"];
-const arr2 = [1, 3, 9, 5, 4, 9, 6];
-const arr3 = [...arr1, ...arr2];
-console.log(arr3);
+}
 
-const arr4 = ["a", "j", "t", "r", "f"];
-const arr5 = [...arr3, ...arr4];
-console.log(arr5);
+const per1 = new TempPerson('Tarun',34, 'IT');  /// objcects of my class
+const per2 = new TempPerson('Isha', 30, 'HR');
+
+console.log(per1.name);
+console.log(per2.name);
+
+per1.greet();
+
+per1.getDetails;  // calling the getter method of the parent class
+
+// per2.setAge = 32;
+per2.getDetails;
